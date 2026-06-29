@@ -1,0 +1,18 @@
+[package]
+name = "diagrammer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+macroquad = "0.4"
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+ron = "0.12.1"
+
+#size optimization
+#[profile.release]
+#strip = "symbols"          # Removes debug info (huge impact) [citation:5]
+#opt-level = "z"            # Optimize for size over speed [citation:1]
+#lto = "fat"                # Aggressive link-time optimization [citation:5]
+#codegen-units = 1          # Enables more cross-crate optimizations [citation:1]
+#panic = "abort"            # Replaces unwinding with immediate abort [citation:7]
