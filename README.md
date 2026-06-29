@@ -1,3 +1,12 @@
+## 📸 Screenshots
+
+![Main screen](screenshot_main.png)
+
+![Menu](screenshot_menu.png)
+
+## 🎥 Demo
+
+![Demo animation](demo.gif)
 # Diagrammer
 
 **A simple diagram visualization tool built with Rust and Macroquad.**
