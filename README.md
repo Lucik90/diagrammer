@@ -6,7 +6,7 @@
 
 ## 🎥 Demo
 
-![Demo animation](demo.gif)
+![Demo animation](demo.webp)
 # Diagrammer
 
 **A simple diagram visualization tool built with Rust and Macroquad.**
