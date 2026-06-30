@@ -33,7 +33,7 @@ async fn main() {
     let mut diagram: HashMap<NaiveDate, HashDiagram> = match work_with_fs::load() {
         Ok(value) => value,
         Err(e) => {
-            app_stats.printing_error = Some("Load error! File diagram_neo.ron not found. Using empty diagram. Add data via menu to save.".to_string());
+            app_stats.printing_error = Some("Load error! File diagram.ron not found. Using empty diagram. Add data via menu to save.".to_string());
             HashMap::new()
         },
     };

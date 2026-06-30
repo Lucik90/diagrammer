@@ -11,7 +11,7 @@ pub fn save(diagram: &HashMap<NaiveDate, HashDiagram>) -> Result<(), Box<dyn std
         &diagram,
         ron::ser::PrettyConfig::default(),
     )?;
-    std::fs::write("diagram_neo.ron", ron_string)?;
+    std::fs::write("diagram.ron", ron_string)?;
 
     Ok(())
 }
